@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="idostuff" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>idostuff - designing and developping stuff</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <!-- endinject -->
+  <!-- features:css -->
+  <link rel="stylesheet" href="styles/css/index.css">
+  <link rel="stylesheet" href="styles/css/description/description.css">
+  <link rel="stylesheet" href="styles/css/contact/contact.css">
+  <link rel="stylesheet" href="styles/css/home/home.css">
+  <link rel="stylesheet" href="styles/css/projects/projects.css">
+  <!-- endinject -->
+</head>
+
+<body class="idostuff">
+  <div class="menu">
+    <nav class="navbar navbar-black navbar-default" ui-route="/home" ng-hide="$uiRoute" ng-class="{active: !$uiRoute}">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <div class="brand_name">
+              <h3 class="text-black">I do stuff</h3>
+            </div>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref-active="active" ui-sref="home">home</a></li>
+            <li><a ui-sref-active="active" ui-sref="projects">projects</a></li>
+            <li><a ui-sref-active="active" ui-sref="description">me</a></li>
+            <li><a ui-sref-active="active" ui-sref="contact">contact</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+  </div>
+  <div class="main-div container-fluid" ui-view></div>
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-ui-route/route.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-ui-scroll/dist/ui-scroll.js"></script>
+  <script src="bower_components/angular-ui-scrollpoint/dist/scrollpoint.js"></script>
+  <script src="bower_components/angular-ui-event/dist/event.js"></script>
+  <script src="bower_components/angular-ui-mask/dist/mask.js"></script>
+  <script src="bower_components/angular-ui-validate/dist/validate.js"></script>
+  <script src="bower_components/angular-ui-indeterminate/dist/indeterminate.js"></script>
+  <script src="bower_components/angular-ui-uploader/dist/uploader.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/easing/easing.js"></script>
+  <script src="bower_components/angular-ui-utils/index.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endinject -->
+  <script src="app.js"></script>
+  <!-- features:js -->
+  <script src="scripts/feature/contact/contact.controller.js"></script>
+  <script src="scripts/feature/description/description.controller.js"></script>
+  <script src="scripts/feature/projects/projects.controller.js"></script>
+  <script src="scripts/feature/home/home.controller.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>

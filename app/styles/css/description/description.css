@@ -1,0 +1,37 @@
+section {
+  font-size: 14px;
+  margin-top: 20px; }
+  section i.fa {
+    text-align: center;
+    font-size: 24px; }
+  section div {
+    width: 100%;
+    font-size: 12px;
+    text-align: justify; }
+
+@media (min-width: 1024px) {
+  .content {
+    height: 100%;
+    background: #222; }
+    .content .bloc {
+      height: 100%; }
+    .content .profile_pic {
+      -webkit-filter: grayscale(100%);
+      height: 100%;
+      overflow: hidden; }
+      .content .profile_pic img {
+        width: 100%; }
+    .content .jumbotron {
+      background: none;
+      padding: 0 0 0 0;
+      float: left; }
+  .icons {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px; }
+  section {
+    font-size: 0;
+    padding-left: 40px !important;
+    padding-right: 40px !important; }
+    section .section_text {
+      font-size: 14px; } }
