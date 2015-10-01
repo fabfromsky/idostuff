@@ -1,4 +1,4 @@
-.description {
+.contact {
 
   .bloc {
 
@@ -8,7 +8,6 @@
   .form {
     height: 400px;
     width: calc(100% - 30px);
-    margin-top: 40px;
 
     .col-md-6 {
       padding: 20px 40px 20px 40px;
@@ -72,8 +71,6 @@
     }
   }
 
-
-
   .col-md-4 {
     padding: 0px; 
 
@@ -84,6 +81,22 @@
     .title {
       padding-left: 40px;
       float: none;
+      margin-bottom: 40px;
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .content{
+      height: 100%;
+      background: #222;
+
+      .bloc {
+        height: 100%;
+      }
     }
   }
 }

@@ -10,9 +10,12 @@ var gulp            = require('gulp'),
 
 
 gulp.task('inject', function() {
+  var bootstrap     = gulp.src('./app/bower_components/bootstrap/dist/css/bootstrap.css', {read: false}),
+      fontAwesome   = gulp.src('./app/bower_components/font-awesome/css/font-awesome.css', {read: false});
+
   gulp.src('./app/index.html')
     .pipe(inject(gulp.src(mainBowerFiles(), {read: false}), {name: 'bower', relative: true}))
-    .pipe(inject(gulp.src('./app/bower_components/bootstrap/dist/css/bootstrap.css', {read: false}), {name: 'bower', relative: true}))
+    .pipe(inject(es.merge(bootstrap, fontAwesome), {name: 'bower', relative: true}))
     .pipe(inject(gulp.src('./app/scripts/feature/**/*.js', {read: false}), {name: 'features', relative: true}))
     .pipe(inject(gulp.src('./app/styles/css/**/*.css', {read: false}), {name: 'features', relative: true}))
     .pipe(gulp.dest('app'));

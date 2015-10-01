@@ -1,16 +1,15 @@
-.description .bloc {
+.contact .bloc {
   position: relative; }
 
-.description .form {
+.contact .form {
   height: 400px;
-  width: calc(100% - 30px);
-  margin-top: 40px; }
-  .description .form .col-md-6 {
+  width: calc(100% - 30px); }
+  .contact .form .col-md-6 {
     padding: 20px 40px 20px 40px;
     height: 330px; }
-  .description .form .form-group {
+  .contact .form .form-group {
     margin-bottom: 30px; }
-  .description .form input[type='text'] {
+  .contact .form input[type='text'] {
     background: none;
     border: none;
     border-bottom: 1px solid white;
@@ -19,7 +18,7 @@
     width: 100%;
     text-transform: uppercase;
     color: white; }
-  .description .form textarea {
+  .contact .form textarea {
     display: block;
     background: none;
     border: none;
@@ -42,23 +41,33 @@
     background-size: 100% 50px;
     font-family: Arial, Helvetica, Sans-serif;
     padding: 8px; }
-  .description .form input[type="submit"].send-button {
+  .contact .form input[type="submit"].send-button {
     width: 240px;
     margin-left: auto;
     margin-right: auto; }
 
-.description #map {
+.contact #map {
   position: relative;
   height: 100%;
   width: 100%; }
-  .description #map h2 {
+  .contact #map h2 {
     margin-bottom: 20px; }
 
-.description .col-md-4 {
+.contact .col-md-4 {
   padding: 0px; }
 
-.description .col-md-8 {
+.contact .col-md-8 {
   padding: 20px; }
-  .description .col-md-8 .title {
+  .contact .col-md-8 .title {
     padding-left: 40px;
-    float: none; }
+    float: none;
+    margin-bottom: 40px; }
+    .contact .col-md-8 .title span {
+      text-transform: uppercase; }
+
+@media (min-width: 1024px) {
+  .contact .content {
+    height: 100%;
+    background: #222; }
+    .contact .content .bloc {
+      height: 100%; } }
