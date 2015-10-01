@@ -32,6 +32,6 @@ gulp.task('serve', ['sass', 'inject'], function(){
     }
   });
 
-  gulp.watch(['styles/**', 'scripts/feature/**/*.scss'], { cwd:'app' }, ['sass']);
+  gulp.watch(['styles/**', 'scripts/feature/**/*.{scss, js}'], { cwd:'app' }, ['sass']);
   gulp.watch(['scripts/feature/**/*.html'], { cwd:'app' }, reload);
 })
