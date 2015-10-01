@@ -1,4 +1,4 @@
-<div class="page description">
+<div class="page projects">
   <div class="content">
     <div class="bloc col-md-8">
       <div class="col-xs-12 title">
@@ -6,8 +6,35 @@
           Projects
         </h1>
       </div>
+      <div class="project-infos">
+        <ul class="projects-list">
+          <li class="project" ng-repeat="project in pc.projects" ng-show="{{project.show}}">
+            <div class="project-title">
+              {{project.title}}
+            </div>
+            <div class="project-date">
+              {{project.date}}
+            </div>
+            <div class="project-description">
+              {{project.descriptionFR}}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="projects-pagination col-xs-12">
+        <ul>
+          <li class="project-index" ng-repeat="project in pc.projects">
+            <a href='#' ng-click="pc.show('{{project.id}}')">{{project.id}}</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="bloc col-md-4">
+      <ul class="imgs-list">
+        <li ng-repeat="project in pc.projects" ng-show="{{project.show}}" class="project-img">
+          <img src="{{project.thumb}}" />
+        </li>
+      </ul>
     </div>
   </div>
 </div>

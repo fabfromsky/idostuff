@@ -25,6 +25,8 @@ angular
             .state('projects', {
                 url: '/works',
                 templateUrl: '/scripts/feature/projects/projects.html',
+                controller: 'ProjectsCtrl',
+                controllerAs: 'pc'
             })
             .state('description', {
                 url: '/me',
