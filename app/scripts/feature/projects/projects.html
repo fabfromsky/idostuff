@@ -5,10 +5,18 @@
         <h1 class="page-title text-white">
           Projects
         </h1>
+        <span ng-repeat="project in pc.projects" ng-if="project.show">{{project.title}} / {{project.category}}</span>
+      </div>
+      <div class="projects-pagination col-xs-12">
+        <ul>
+          <li class="project-index" ng-repeat="project in pc.projects" ng-class="{ 'active': project.show }">
+            <a href='#' ng-click="pc.show(project.id, $event)">/ {{project.id}}</a>
+          </li>
+        </ul>
       </div>
       <div class="project-infos">
         <ul class="projects-list">
-          <li class="project" ng-repeat="project in pc.projects" ng-show="{{project.show}}">
+          <li class="project" ng-repeat="project in pc.projects" ng-if="project.show">
             <div class="project-title">
               {{project.title}}
             </div>
@@ -18,21 +26,21 @@
             <div class="project-description">
               {{project.descriptionFR}}
             </div>
-          </li>
-        </ul>
-      </div>
-      <div class="projects-pagination col-xs-12">
-        <ul>
-          <li class="project-index" ng-repeat="project in pc.projects">
-            <a href='#' ng-click="pc.show('{{project.id}}')">{{project.id}}</a>
+            <div class="btn black-button go-project">
+              <a href="#" ui-sref="/work/{{project.ref}}">
+                / Check out the project
+              </a>
+            </div>
           </li>
         </ul>
       </div>
     </div>
     <div class="bloc col-md-4">
       <ul class="imgs-list">
-        <li ng-repeat="project in pc.projects" ng-show="{{project.show}}" class="project-img">
-          <img src="{{project.thumb}}" />
+        <li ng-repeat="project in pc.projects" ng-show="project.show" class="project-img">
+          <a ui-sref="/work/{{project.ref}}" href="#">
+            <img src="{{project.thumb}}" />
+          </a>
         </li>
       </ul>
     </div>

@@ -9,6 +9,20 @@
     margin-bottom: 40px; }
     .projects .col-md-8 .title span {
       text-transform: uppercase; }
+  .projects .col-md-8 .project-infos {
+    padding: 40px; }
+    .projects .col-md-8 .project-infos ul {
+      list-style-type: none; }
+      .projects .col-md-8 .project-infos ul .project-title {
+        font-size: 20px; }
+      .projects .col-md-8 .project-infos ul .project-description {
+        margin-top: 20px;
+        min-height: 200px; }
+      .projects .col-md-8 .project-infos ul .btn.go-project a {
+        margin-top: 35px;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto; }
 
 .projects ul.imgs-list {
   height: 100%;
@@ -16,17 +30,39 @@
   list-style-type: none;
   overflow: hidden; }
   .projects ul.imgs-list .project-img {
+    position: relative;
+    display: block;
+    height: 100%;
     width: 100%;
-    height: 100%; }
+    overflow: hidden; }
+    .projects ul.imgs-list .project-img img {
+      position: absolute;
+      height: 100%;
+      left: 50%;
+      transform: translate(-50%, 0); }
+
+.projects .projects-pagination {
+  text-align: center;
+  bottom: 20px;
+  height: 30px;
+  line-height: 30px; }
+  .projects .projects-pagination ul {
+    list-style-type: none; }
+    .projects .projects-pagination ul li {
+      display: inline-block;
+      padding: 10px; }
+      .projects .projects-pagination ul li a {
+        transition: all 0.5s;
+        color: #999; }
+      .projects .projects-pagination ul li.active a,
+      .projects .projects-pagination ul li.visited a {
+        text-shadow: 0px 0px 5px white;
+        transition: all 0.5s;
+        color: white; }
 
 @media (min-width: 1024px) {
   .projects .content {
     height: 100%;
     background: #222; }
     .projects .content .bloc {
-      height: 100%; }
-    .projects .content .projects-pagination ul {
-      list-style-type: none; }
-      .projects .content .projects-pagination ul li {
-        display: inline-block;
-        padding: 10px; } }
+      height: 100%; } }
