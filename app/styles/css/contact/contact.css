@@ -42,7 +42,7 @@
     font-family: Arial, Helvetica, Sans-serif;
     padding-left: 10px;
     padding-right: 10px; }
-  .contact .form input[type="submit"].send-button {
+  .contact .form .send-button input[type="submit"] {
     width: 240px;
     margin-left: auto;
     margin-right: auto; }

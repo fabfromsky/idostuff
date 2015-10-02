@@ -69,10 +69,11 @@ a {
 .btn  {
   display: block;
   cursor: default;
+  padding: 20px;
 }
 
 .btn a,
-input[type="submit"]{
+.btn input[type="submit"]{
   display: block;
   border: none;
   background: none;
@@ -83,7 +84,6 @@ input[type="submit"]{
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s;
-  margin: 20px;
 }
 
 .btn a {
@@ -91,14 +91,14 @@ input[type="submit"]{
 }
 
 .btn a:hover,
-input[type="submit"]:hover {
+.btn input[type="submit"]:hover {
   box-shadow: 0px 0px 5px white;
   text-shadow: 0px 0px 5px white;
   transition: all 0.2s;
 }
 
 .black-button a,
-input[type='submit'].black-button {
+.black-button input[type='submit'] {
   color: white;
   border: 1px solid white;
   border-radius: 5px;

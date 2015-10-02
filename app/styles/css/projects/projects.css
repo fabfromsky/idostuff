@@ -16,10 +16,9 @@
       .projects .col-md-8 .project-infos ul .project-title {
         font-size: 20px; }
       .projects .col-md-8 .project-infos ul .project-description {
-        margin-top: 20px;
-        min-height: 200px; }
+        margin-top: 20px; }
       .projects .col-md-8 .project-infos ul .btn.go-project a {
-        margin-top: 35px;
+        margin-top: 20px;
         width: 320px;
         margin-left: auto;
         margin-right: auto; }
@@ -43,9 +42,7 @@
 
 .projects .projects-pagination {
   text-align: center;
-  bottom: 20px;
-  height: 30px;
-  line-height: 30px; }
+  padding-top: 20px; }
   .projects .projects-pagination ul {
     list-style-type: none; }
     .projects .projects-pagination ul li {

@@ -8,6 +8,8 @@
     width: 100%;
     font-size: 12px;
     text-align: left; }
+  .description section.cv-section {
+    margin-top: 0; }
 
 .description .col-md-4 {
   padding: 0px; }
