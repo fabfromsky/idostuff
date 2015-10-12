@@ -35,6 +35,13 @@
 
 .btn.black-button.go_button {
   position: absolute;
+  bottom: 20px;
   left: 50%;
-  transform: translate(-50%, 50%);
-  bottom: 100px; }
+  transform: translate(-50%, 0); }
+
+@media (min-width: 1024px) {
+  .btn.black-button.go_button {
+    transform: translate(-50%, 50%);
+    bottom: 100px;
+    font-size: 18px;
+    width: 240px; } }

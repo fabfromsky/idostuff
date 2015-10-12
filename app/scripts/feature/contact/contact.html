@@ -9,27 +9,29 @@
         <span><a href="tel:+33668809406">+33 6 68 80 94 06</a> / </span>
         <span><a href="mailto:909fab@gmail.com">909fab@gmail.com</a></span>
       </div>
-      <form class="form" action="" method="post">
+      <form class="form" name="contactform" method="post" ng-submit="cc.sendMail($event, formData)" role='form'>
         <div class="col-md-6">
           <div class="form-group">
-            <input name="firstname" type="text" placeholder="your firstname"/>
+            <input id="form_firstname" ng-model="formData.firstname" name="firstname" type="text" placeholder="your firstname"/>
           </div>
           <div class="form-group">
-            <input name="lastname" type="text" placeholder="your lastname"/>
+            <input id="form-lastname" ng-model="formData.lastname" name="lastname" type="text" placeholder="your lastname"/>
           </div>
           <div class="form-group">
-            <input name="email" type="text" placeholder="your email"/>
+            <input id="form_email" ng-model="formData.email" name="email" type="text" placeholder="your email"/>
           </div>
           <div class="form-group">
-            <input name="tel" type="text" placeholder="your phone"/>
+            <input id="form_phone" ng-model="formData.tel" name="tel" type="text" placeholder="your phone"/>
           </div>
         </div>
         <div class="col-md-6">
-          <textarea placeholder="your message"></textarea>
+          <textarea id="form_message" ng-model="formData.message" name="message" placeholder="your message"></textarea>
         </div>
         <div class="col-md-12 send">
           <div class="btn black-button send-button">
-            <input class="" type="submit" id="send" value="/ Send"/>
+            <button class="" type="submit" id="send">
+              / Send
+            </button>
           </div>
         </div>
       </form>

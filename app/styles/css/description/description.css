@@ -1,6 +1,7 @@
 .description section {
   font-size: 14px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding: 0; }
   .description section i.fa {
     text-align: center;
     font-size: 24px; }
@@ -11,22 +12,24 @@
   .description section.cv-section {
     margin-top: 0; }
 
-.description .col-md-4 {
-  padding: 0px; }
-
-.description .col-md-8 {
-  padding: 20px; }
-  .description .col-md-8 .title {
-    padding-left: 40px;
-    float: none;
-    margin-bottom: 40px; }
-    .description .col-md-8 .title span {
-      text-transform: uppercase; }
-
 .description .btn.cv-button a {
-  width: 320px;
+  font-size: 12px;
+  width: 240px;
   margin-left: auto;
   margin-right: auto; }
+
+.description .profile_pic {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  height: 100%;
+  overflow: hidden;
+  background-image: url("/styles/imgs/profile.jpg");
+  background-size: cover; }
+
+.description .icons {
+  text-align: center;
+  padding: 20px; }
 
 @media (min-width: 1024px) {
   .description .content {
@@ -40,14 +43,6 @@
         .description .content .bloc.col-md-8::-moz-scrollbar,
         .description .content .bloc.col-md-8::scrollbar {
           display: none; }
-    .description .content .profile_pic {
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      filter: grayscale(100%);
-      height: 100%;
-      overflow: hidden;
-      background-image: url("/styles/imgs/profile.jpg");
-      background-size: cover; }
   .description .icons {
     font-size: 25px;
     text-align: center;
@@ -57,4 +52,9 @@
     padding-left: 40px !important;
     padding-right: 40px !important; }
     .description section .section_text {
-      font-size: 14px; } }
+      font-size: 14px; }
+  .description .btn.cv-button a {
+    font-size: 18px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto; } }

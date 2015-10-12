@@ -35,6 +35,8 @@ angular
             .state('contact', {
                 url: '/contact',
                 templateUrl: '/scripts/feature/contact/contact.html',
+                controller: 'ContactCtrl',
+                controllerAs: 'cc'
             });
 
         $urlRouterProvider.otherwise('/home');

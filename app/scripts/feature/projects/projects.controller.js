@@ -60,10 +60,34 @@ function ProjectsCtrl() {
       "id": 3,
       "title": "Sia Vendée",
       "ref": "siavendee",
-      "category": "wedesign",
+      "category": "webdesign",
       "date": "07/2013",
-      "descriptionFR": "Ce projet est un de deux projets tests proposés lors d'un entretien pour un poste de webdesigner. Il s 'agit donc de la refonte du site d'agence immobillière regroupant les annonces exclusives de différentes agences. Le design a été établi à partir des éléments fournis: le logo et l 'arborescence. Cette dernière a toutefois été retravaillée dans le but de simplifier la navigation jugée trop complexe.",
+      "descriptionFR": "Ce projet est un des deux projets tests proposés lors d'un entretien pour un poste de webdesigner. Il s 'agit donc de la refonte du site d'agence immobillière regroupant les annonces exclusives de différentes agences. Le design a été établi à partir des éléments fournis: le logo et l 'arborescence. Cette dernière a toutefois été retravaillée dans le but de simplifier la navigation jugée trop complexe.",
       "thumb": "styles/imgs/thumbs/siavendee.png",
+      "imgs": [
+        {
+          "title": "",
+          "url": ""
+        }, {
+          "title": "",
+          "url": ""
+        }, {
+          "title": "",
+          "url": ""
+        }, {
+          "title": "",
+          "url": ""
+        }
+      ],
+      "show": false
+    },{
+      "id": 4,
+      "title": "Camp' Atlantique",
+      "ref": "campatlantique",
+      "category": "webdesign",
+      "date": "07/2013",
+      "descriptionFR": "Ce projet est un des deux projets tests proposés lors d'un entretien pour un poste de webdesigner. Il s'agit donc de la refonte du site web regroupant plusieurs camping de diverses régions. La refonte s'inspire du site existant tout en le modernisant. J'ai également produit une démo web de la page d'accueil avec un slideshow et les interactions du menu.",
+      "thumb": "styles/imgs/thumbs/campatlantique.png",
       "imgs": [
         {
           "title": "",
