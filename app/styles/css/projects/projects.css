@@ -1,21 +1,32 @@
-.projects .col-md-8 .project-infos ul {
-  list-style-type: none; }
-  .projects .col-md-8 .project-infos ul .project-title {
-    font-size: 20px; }
-  .projects .col-md-8 .project-infos ul .project-description {
-    margin-top: 20px; }
-  .projects .col-md-8 .project-infos ul .btn.go-project a {
-    margin-top: 20px;
-    font-size: 12px;
-    width: 240px;
-    margin-left: auto;
-    margin-right: auto; }
+.projects .col-md-6 {
+  padding: 20px; }
+
+.projects .col-md-4 {
+  padding: 20px; }
+  .projects .col-md-4 .project-infos {
+    margin-top: 80px; }
+    .projects .col-md-4 .project-infos ul {
+      list-style-type: none; }
+    .projects .col-md-4 .project-infos .project-title {
+      font-size: 24px; }
+    .projects .col-md-4 .project-infos .project-summary {
+      margin-top: 20px; }
+    .projects .col-md-4 .project-infos .btn.go-project a {
+      margin-top: 20px;
+      font-size: 12px;
+      width: 240px;
+      margin-left: auto;
+      margin-right: auto; }
+
+.projects .col-md-8 {
+  padding: 0; }
 
 .projects ul.imgs-list {
   height: 100%;
   width: 100%;
   list-style-type: none;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0; }
   .projects ul.imgs-list .project-img {
     position: relative;
     display: block;
@@ -23,16 +34,15 @@
     width: 100%;
     overflow: hidden; }
     .projects ul.imgs-list .project-img img {
-      position: absolute;
-      height: 100%;
-      left: 50%;
-      transform: translate(-50%, 0); }
+      min-height: 100%;
+      min-width: 100%; }
 
 .projects .projects-pagination {
-  text-align: center;
+  text-align: left;
   padding-top: 20px; }
   .projects .projects-pagination ul {
-    list-style-type: none; }
+    list-style-type: none;
+    margin-bottom: 0; }
     .projects .projects-pagination ul li {
       display: inline-block;
       padding: 10px; }
@@ -51,8 +61,8 @@
     background: #222; }
     .projects .content .bloc {
       height: 100%; }
-      .projects .content .bloc .project-infos {
-        padding: 40px; }
-        .projects .content .bloc .project-infos .btn.go-project a {
-          font-size: 18px;
-          width: 320px; } }
+      .projects .content .bloc .project-infos .btn.go-project a {
+        font-size: 18px;
+        width: 320px; }
+      .projects .content .bloc .projects-pagination {
+        text-align: right; } }

@@ -1,0 +1,41 @@
+.projects.details .bloc {
+  height: calc(100% - 50px); }
+  .projects.details .bloc .col-md-6.project-infos {
+    text-align: right; }
+    .projects.details .bloc .col-md-6.project-infos div {
+      padding: 10px; }
+  .projects.details .bloc .imgs-list {
+    height: 100%;
+    margin-bottom: 0; }
+    .projects.details .bloc .imgs-list li, .projects.details .bloc .imgs-list a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+      .projects.details .bloc .imgs-list li img, .projects.details .bloc .imgs-list a img {
+        min-width: 100%;
+        min-height: 100%; }
+  .projects.details .bloc .image-title {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    height: 50px;
+    width: auto;
+    background: rgba(30, 30, 30, 0.8);
+    padding-top: 0; }
+    .projects.details .bloc .image-title ul {
+      list-style-type: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 100%;
+      line-height: 50px; }
+
+.projects.details .projects-pagination {
+  text-align: left;
+  line-height: 30px;
+  padding: 0; }
+  .projects.details .projects-pagination .col-md-8 {
+    padding-left: 20px; }
+
+@media (min-width: 1024px) {
+  .projects.details .content .bloc .projects-pagination {
+    line-height: 30px; } }

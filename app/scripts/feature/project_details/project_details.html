@@ -1,0 +1,52 @@
+<div class="page projects details">
+  <div class="content">
+    <div class="bloc col-md-4">
+      <div class="col-md-6 title">
+        <h1 class="page-title text-white">
+          {{pdc.currentProject.title}}
+        </h1>
+        <span>{{pdc.currentProject.category}}</span>
+      </div>
+      <div class="project-infos col-md-6">
+        <div class="project-date">
+          {{pdc.currentProject.date}}
+        </div>
+      </div>
+      <div class="col-md-12 project-infos">
+        <div class="project-summary">
+          {{pdc.currentProject.summary}}
+        </div>
+      </div>
+    </div>
+    <div class="bloc col-md-8">
+      <ul class="imgs-list col-md-12">
+        <li id="{{pdc.currentProject.imgs.indexOf(image)}}" ng-repeat="image in pdc.currentProject.imgs" ng-class="{{pdc.currentImg}}" ng-if="pdc.currentImg == pdc.currentProject.imgs.indexOf(image)">
+          <a href="#">
+            <img src="styles/imgs/thumbs/{{pdc.currentProject.ref}}/{{image.url}}" title="{{image.title}}"/>
+          </a>
+        </li>
+      </ul>
+      <div class="image-title col-md-12">
+        <ul>
+          <li id="{{pdc.currentProject.imgs.indexOf(image)}}" ng-repeat="image in pdc.currentProject.imgs" ng-class="{{pdc.currentImg}}" ng-if="pdc.currentImg == pdc.currentProject.imgs.indexOf(image)">
+            {{image.title}}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="projects-pagination col-md-12">
+      <div class="col-md-8 pull-right">
+        <ul>
+          <li class="prev">
+            <a href="#" ng-click="pdc.showPrev($event)">/ previous image</a>
+          </li>
+          <li ng-repeat="image in pdc.currentProject.imgs" ng-class="{'active' : pdc.currentProject.imgs.indexOf(image) == pdc.currentImg}">
+            <a href='#' ng-click="pdc.showImg(pdc.currentProject.imgs.indexOf(image), $event)">/ {{pdc.currentProject.imgs.indexOf(image) + 1}}</a>
+          </li>
+          <li class="next">
+            <a href="#" ng-click="pdc.showNext($event)">/ next image</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</div>
