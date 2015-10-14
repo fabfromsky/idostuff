@@ -16,8 +16,14 @@ function ProjectsCtrl($state) {
       "ref": "suitup",
       "category": "brand identity",
       "date": "11/2013 - 12/2013",
-      "summary": "Suit Up est un projet fictif de site e-commerce spécialisé dans le prêt-à-porter masculin.",
-      "description": "",
+      "summary": "SuitUp est un projet de site e-commerce spécialisé dans le prêt-à-porter masculin.",
+      "description": [
+        {
+          "paragraph": "SuitUp part d'un constat personnel: il y'a trop peu de rayons 'homme' dans les magasins de vêtements. Il s'agit donc d'un site e-commerce exclusivement masculin."
+        }, {
+          "paragraph": "SuitUp a été pensé comme une marque de standing, l'identité devait donc refléter cet aspect de la marque. Le logo est l'élément principal caractérisant ce standing de part la police employée et le noeud papillon venant le souligner. Le site web se veut, quant à lui, sobre et élégant."
+        }
+      ],
       "thumb": "styles/imgs/thumbs/suitup.png",
       "imgs": [
         {
@@ -46,8 +52,18 @@ function ProjectsCtrl($state) {
       "ref": "bigoudanne",
       "category": "brand identity",
       "date": "08/2013",
-      "summary": "Création d'identité pour une chaîne de restaurants/crêperies fictive.",
-      "description": "",
+      "summary": "Création d'identité pour une chaîne de restaurants-crêperies.",
+      "description": [
+        {
+          "paragraph": "La Bigoud'Anne est une chaîne de restauration fictive créée pour le projet."
+        },{
+          "paragraph": "L'objectif de ce projet était de réaliser certains des éléments pouvant composer l'identité graphique d'une marque."
+        },{
+          "paragraph": "Le logo de la marque est inspiré d'un buste de marianne auquel on aurait ajouté une coiffe de bigoudènne. Les couleurs rappellent le blé noir et le froment, ingrédients essentiels de toutes les crêperies."
+        },{
+          "paragraph": "Le site web de la marque s'appuie sur ces couleurs pour superposer et mettre en avant certains éléments."
+        }
+      ],
       "thumb": "styles/imgs/thumbs/bigoudanne.png",
       "imgs": [
         {
@@ -81,17 +97,23 @@ function ProjectsCtrl($state) {
       "thumb": "styles/imgs/thumbs/siavendee.png",
       "imgs": [
         {
-          "title": "",
-          "url": ""
+          "title": "SIA website homepage",
+          "url": "ecran1024_accueil.png"
         }, {
-          "title": "",
-          "url": ""
+          "title": "SIA website my account",
+          "url": "ecran1024_compte.png"
         }, {
-          "title": "",
-          "url": ""
+          "title": "SIA website search",
+          "url": "ecran1024_recherche.png"
         }, {
-          "title": "",
-          "url": ""
+          "title": "SIA website homepage widescreen",
+          "url": "ecran1380_accueil.png"
+        }, {
+          "title": "SIA webiste mobile",
+          "url": "SIA-06.png"
+        }, {
+          "title": "SIA website mobile",
+          "url": "siamobile.png"
         }
       ]
     },{
@@ -105,17 +127,20 @@ function ProjectsCtrl($state) {
       "thumb": "styles/imgs/thumbs/campatlantique.png",
       "imgs": [
         {
-          "title": "",
-          "url": ""
+          "title": "Camp'Atlantique website homepage",
+          "url": "campatlantique_01_accueil.png"
         }, {
-          "title": "",
-          "url": ""
+          "title": "Camp'Atlantique website campings list",
+          "url": "campatlantique_02_campings.png"
         }, {
-          "title": "",
-          "url": ""
+          "title": "Camp'Atlantique website camping details",
+          "url": "campatlantique_03_camping_detail_01.png"
         }, {
-          "title": "",
-          "url": ""
+          "title": "Camp'Atlantique website camping details",
+          "url": "campatlantique_04_camping_detail_02.png"
+        }, {
+          "title": "Camp'Atlantique website contact",
+          "url": "campatlantique_05_contact.png"
         }
       ]
     }

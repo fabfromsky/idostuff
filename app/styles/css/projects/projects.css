@@ -3,15 +3,15 @@
 
 .projects .col-md-4 {
   padding: 20px; }
-  .projects .col-md-4 .project-infos {
+  .projects .col-md-4 .project-infos.col-md-12 {
     margin-top: 80px; }
-    .projects .col-md-4 .project-infos ul {
+    .projects .col-md-4 .project-infos.col-md-12 ul {
       list-style-type: none; }
-    .projects .col-md-4 .project-infos .project-title {
+    .projects .col-md-4 .project-infos.col-md-12 .project-title {
       font-size: 24px; }
-    .projects .col-md-4 .project-infos .project-summary {
+    .projects .col-md-4 .project-infos.col-md-12 .project-summary {
       margin-top: 20px; }
-    .projects .col-md-4 .project-infos .btn.go-project a {
+    .projects .col-md-4 .project-infos.col-md-12 .btn.go-project a {
       margin-top: 20px;
       font-size: 12px;
       width: 240px;

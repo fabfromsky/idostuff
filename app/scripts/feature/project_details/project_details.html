@@ -14,14 +14,21 @@
       </div>
       <div class="col-md-12 project-infos">
         <div class="project-summary">
-          {{pdc.currentProject.summary}}
+          <h2 class="project-title">Summary</h2>
+          <p>{{pdc.currentProject.summary}}</p>
+        </div>
+        <div class="project-description">
+          <h2 class="project-title">Description</h2>
+          <p ng-repeat="paragraph in pdc.currentProject.description">
+            {{paragraph.paragraph}}
+          </p>
         </div>
       </div>
     </div>
     <div class="bloc col-md-8">
       <ul class="imgs-list col-md-12">
-        <li id="{{pdc.currentProject.imgs.indexOf(image)}}" ng-repeat="image in pdc.currentProject.imgs" ng-class="{{pdc.currentImg}}" ng-if="pdc.currentImg == pdc.currentProject.imgs.indexOf(image)">
-          <a href="#">
+        <li id="{{pdc.currentProject.imgs.indexOf(image)}}" ng-repeat="image in pdc.currentProject.imgs" ng-if="pdc.currentImg == pdc.currentProject.imgs.indexOf(image)">
+          <a href="#" ng-click="pdc.openImg(pdc.currentProject.imgs.indexOf(image))">
             <img src="styles/imgs/thumbs/{{pdc.currentProject.ref}}/{{image.url}}" title="{{image.title}}"/>
           </a>
         </li>
@@ -29,7 +36,7 @@
       <div class="image-title col-md-12">
         <ul>
           <li id="{{pdc.currentProject.imgs.indexOf(image)}}" ng-repeat="image in pdc.currentProject.imgs" ng-class="{{pdc.currentImg}}" ng-if="pdc.currentImg == pdc.currentProject.imgs.indexOf(image)">
-            {{image.title}}
+            <a href="#" ng-click="pdc.openImg(pdc.currentProject.imgs.indexOf(image))">/ {{image.title}}</a>
           </li>
         </ul>
       </div>
