@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="styles/css/description/description.css">
   <link rel="stylesheet" href="styles/css/home/home.css">
   <link rel="stylesheet" href="styles/css/projects/projects.css">
+  <link rel="stylesheet" href="styles/css/project_details/project_details.css">
   <!-- endinject -->
 </head>
 
@@ -38,10 +39,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
           <ul class="nav navbar-nav navbar-right">
-            <li><a ui-sref-active="active" ui-sref="home">home</a></li>
-            <li><a ui-sref-active="active" ui-sref="projects">projects</a></li>
-            <li><a ui-sref-active="active" ui-sref="description">about me</a></li>
-            <li><a ui-sref-active="active" ui-sref="contact">contact</a></li>
+            <li><a ng-href="#/home">home</a></li>
+            <li><a ui-route ng-href="#/works/1/suitup"  ng-class="{active: $uiRoute}">projects</a></li>
+            <li><a ui-route ng-href="#/me"  ng-class="{active: $uiRoute}">about me</a></li>
+            <li><a ui-route ng-href="#/contact"  ng-class="{active: $uiRoute}">contact</a></li>
           </ul>
         </div>
         <!--/.nav-collapse -->
@@ -52,7 +53,7 @@
   <div class="main-div container-fluid" ui-view></div>
   <div class="footer">
     <div class="btn black-button go_button" ui-route="/home" ng-show="$uiRoute">
-        <a ui-sref="projects">/ GO !</a>
+        <a ng-href="#/works/1/suitup">/ GO !</a>
     </div>
   </div>
   <!-- bower:js -->
@@ -75,10 +76,11 @@
   <script src="app.js"></script>
   <!-- features:js -->
   <script src="scripts/feature/contact/contact.controller.js"></script>
-  <script src="scripts/feature/home/home.controller.js"></script>
   <script src="scripts/feature/description/description.controller.js"></script>
+  <script src="scripts/feature/home/home.controller.js"></script>
   <script src="scripts/feature/maps/maps.js"></script>
   <script src="scripts/feature/projects/projects.controller.js"></script>
+  <script src="scripts/feature/project_details/project_details.controller.js"></script>
   <!-- endinject -->
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4O0oUfNNRLASVBQ425ET3TnNKYSuYzUg&sensor=FALSE"></script>
 </body>

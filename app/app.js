@@ -23,10 +23,16 @@ angular
                 templateUrl: '/scripts/feature/home/home.html',
             })
             .state('projects', {
-                url: '/works',
+                url: '/works/:projectId/:projectRef',
                 templateUrl: '/scripts/feature/projects/projects.html',
                 controller: 'ProjectsCtrl',
                 controllerAs: 'pc'
+            })
+            .state('projectDetails', {
+                url: '/works/:projectId/:projectRef/details',
+                templateUrl: '/scripts/feature/project_details/project_details.html',
+                controller: 'ProjectDetailsCtrl',
+                controllerAs: 'pdc'
             })
             .state('description', {
                 url: '/me',
