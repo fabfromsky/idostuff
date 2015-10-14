@@ -16,9 +16,8 @@ function ContactCtrl() {
       type: "POST",
       url: "sendMail.php",
       data: data,
-      complete: function(data) {
-        console.log(data);
-      }
+      dataType: 'json',
+      headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
     })
   }
 }

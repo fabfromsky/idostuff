@@ -12,20 +12,20 @@
       <form class="form" name="contactform" method="post" ng-submit="cc.sendMail($event, formData)" role='form'>
         <div class="col-md-6">
           <div class="form-group">
-            <input id="form_firstname" ng-model="formData.firstname" name="firstname" type="text" placeholder="your firstname"/>
+            <input id="form_name" ng-model="formData.name" name="name" type="text" placeholder="your name" required/>
           </div>
           <div class="form-group">
-            <input id="form-lastname" ng-model="formData.lastname" name="lastname" type="text" placeholder="your lastname"/>
-          </div>
-          <div class="form-group">
-            <input id="form_email" ng-model="formData.email" name="email" type="text" placeholder="your email"/>
+            <input id="form_email" ng-model="formData.email" name="email" type="text" placeholder="your email" required/>
           </div>
           <div class="form-group">
             <input id="form_phone" ng-model="formData.tel" name="tel" type="text" placeholder="your phone"/>
           </div>
+          <div class="form-group">
+            <input id="form-subject" ng-model="formData.subject" name="subject" type="text" placeholder="your subject" required/>
+          </div>
         </div>
         <div class="col-md-6">
-          <textarea id="form_message" ng-model="formData.message" name="message" placeholder="your message"></textarea>
+          <textarea id="form_message" ng-model="formData.message" name="message" placeholder="your message" required></textarea>
         </div>
         <div class="col-md-12 send">
           <div class="btn black-button send-button">
