@@ -44,13 +44,13 @@
     <div class="projects-pagination col-md-12">
       <div class="col-md-8 pull-right">
         <ul>
-          <li class="prev">
+          <li ng-if="!pdc.mobile" class="prev">
             <a href="#" ng-click="pdc.showPrev($event)">/ previous image</a>
           </li>
           <li ng-repeat="image in pdc.currentProject.imgs" ng-class="{'active' : pdc.currentProject.imgs.indexOf(image) == pdc.currentImg}">
             <a href='#' ng-click="pdc.showImg(pdc.currentProject.imgs.indexOf(image), $event)">/ {{pdc.currentProject.imgs.indexOf(image) + 1}}</a>
           </li>
-          <li class="next">
+          <li ng-if="!pdc.mobile" class="next">
             <a href="#" ng-click="pdc.showNext($event)">/ next image</a>
           </li>
         </ul>

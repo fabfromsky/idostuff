@@ -16,6 +16,8 @@ function ProjectDetailsCtrl($state, $controller) {
 
   vm.currentImg = 0;
 
+  vm.mobile = window.innerWidth < 1024 ? true : false; 
+
   vm.showImg = function(imageId, evt) {
     evt.preventDefault();
     this.currentImg = imageId;

@@ -37,11 +37,15 @@
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translate(-50%, 0); }
+  transform: translate(-50%, 0);
+  width: 240px; }
 
 @media (min-width: 1024px) {
+  .footer {
+    position: relative; }
   .btn.black-button.go_button {
+    position: absolute;
     transform: translate(-50%, 50%);
     bottom: 100px;
-    font-size: 18px;
+    font-size: 14px;
     width: 240px; } }

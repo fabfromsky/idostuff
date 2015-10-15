@@ -71,4 +71,23 @@
       }
     }
   }
+
+  @media (max-width: 1023px) {
+    .content {
+
+      .bloc .col-md-6.project-infos .project-date {
+        text-align: left;
+        padding: 0;
+      }
+      .projects-pagination {
+
+        .col-md-8 {
+
+            text-align: center;
+            float: left !important;
+            width: 100% !important;
+        }
+      }
+    }
+  }
 }

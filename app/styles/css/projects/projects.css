@@ -3,20 +3,18 @@
 
 .projects .col-md-4 {
   padding: 20px; }
-  .projects .col-md-4 .project-infos.col-md-12 {
-    margin-top: 80px; }
-    .projects .col-md-4 .project-infos.col-md-12 ul {
-      list-style-type: none; }
-    .projects .col-md-4 .project-infos.col-md-12 .project-title {
-      font-size: 24px; }
-    .projects .col-md-4 .project-infos.col-md-12 .project-summary {
-      margin-top: 20px; }
-    .projects .col-md-4 .project-infos.col-md-12 .btn.go-project a {
-      margin-top: 20px;
-      font-size: 12px;
-      width: 240px;
-      margin-left: auto;
-      margin-right: auto; }
+  .projects .col-md-4 .project-infos.col-md-12 ul {
+    list-style-type: none; }
+  .projects .col-md-4 .project-infos.col-md-12 .project-title {
+    font-size: 24px; }
+  .projects .col-md-4 .project-infos.col-md-12 .project-summary {
+    margin-top: 20px; }
+  .projects .col-md-4 .project-infos.col-md-12 .btn.go-project a {
+    margin-top: 20px;
+    font-size: 12px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .projects .col-md-8 {
   padding: 0; }
@@ -61,8 +59,16 @@
     background: #222; }
     .projects .content .bloc {
       height: 100%; }
+      .projects .content .bloc .project-infos.col-md-12 {
+        margin-top: 80px; }
       .projects .content .bloc .project-infos .btn.go-project a {
-        font-size: 18px;
-        width: 320px; }
+        font-size: 14px;
+        width: 220px; }
       .projects .content .bloc .projects-pagination {
         text-align: right; } }
+
+@media (max-width: 1023px) {
+  .projects .content .bloc.col-md-4 {
+    height: auto; }
+  .projects .content .bloc.col-md-8 ul img {
+    width: 100%; } }

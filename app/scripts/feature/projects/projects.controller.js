@@ -7,7 +7,9 @@ angular
   ProjectsCtrl.$inject = ['$state'];
 
 function ProjectsCtrl($state) {
-  var vm = this;;
+  var vm = this;
+
+  vm.test = 'toto';
 
   vm.projects = [
     {
@@ -93,7 +95,17 @@ function ProjectsCtrl($state) {
       "category": "webdesign",
       "date": "07/2013",
       "summary": "Projet de refonte de site web pour un entretien.",
-      "description": "",
+      "description": [
+        {
+          "paragraph": "Réalisé pour un entretien d'embauche, le projet est une refonte du site du groupe immobilier SIA Vendée."
+        }, {
+          "paragraph": "Partant du site existant, les éléments essentiels ont été conservés pour définir le design du futur site."
+        }, {
+          "paragraph": "Jugé trop complexe, le menu a également été repensé pour améliorer l'expérience de l'utilisateur."
+        }, {
+          "paragraph": "Une version mobile du site avait été proposée en complément de la version desktop."
+        }
+      ],
       "thumb": "styles/imgs/thumbs/siavendee.png",
       "imgs": [
         {
@@ -109,9 +121,6 @@ function ProjectsCtrl($state) {
           "title": "SIA website homepage widescreen",
           "url": "ecran1380_accueil.png"
         }, {
-          "title": "SIA webiste mobile",
-          "url": "SIA-06.png"
-        }, {
           "title": "SIA website mobile",
           "url": "siamobile.png"
         }
@@ -123,7 +132,15 @@ function ProjectsCtrl($state) {
       "category": "webdesign",
       "date": "07/2013",
       "summary": "Projet de refonte de site web pour un entretien.",
-      "description": "",
+      "description": [
+        {
+          "paragraph": "Il s'agit d'un projet de refonte du site web de Camp'Atlantique réalisé dans le cadre d'un entretien d'embauche."
+        }, {
+          "paragraph": "La seule règle était de reprendre le site existant et de le mettre au goût du jour."
+        }, {
+          "paragraph": "Après étude du site existant, le design du futur site a été décliné à partir du logo tout en conservant les éléments de navigation essentiels déjà présents sur le site existant."
+        }
+      ],
       "thumb": "styles/imgs/thumbs/campatlantique.png",
       "imgs": [
         {
@@ -146,7 +163,7 @@ function ProjectsCtrl($state) {
     }
   ];
 
-  vm.currentProjectId = $state.params.projectId;
+  vm.currentProjectId = JSON.parse($state.params.projectId);
 
   vm.show = function(index, ref, evt) {
     evt.preventDefault();
