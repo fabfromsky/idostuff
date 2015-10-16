@@ -1,11 +1,12 @@
 'use strict';
 
 var gulp            = require('gulp'),
-    browserSync     = require('browser-sync'),
+    browserSync     = require('browser-sync').create(),
     inject          = require('gulp-inject'),
     mainBowerFiles  = require('main-bower-files'),
     es              = require('event-stream'),
     sass            = require('gulp-sass'),
+    php             = require('gulp-connect-php'),
     reload          = browserSync.reload;
 
 
@@ -29,10 +30,12 @@ gulp.task('sass', function() {
 })
 
 gulp.task('serve', ['sass', 'inject'], function(){
-  browserSync({
-    server: {
-      baseDir: "app"
-    }
+  php.server({ base: 'app', port: 8000 }, function() {
+    browserSync.init({
+      server: {
+        baseDir: "app"
+      }
+    });
   });
 
   gulp.watch(['styles/**', 'scripts/feature/**/*.{scss, js}'], { cwd:'app' }, ['sass']);

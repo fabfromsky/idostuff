@@ -17,9 +17,11 @@ header('Acces-Control-Allow-Origin: *');
       $body    =  "From:\n" . $from . "\n\n";
       $body    .=  "To:\n" . $to . "\n\n";
       $body    .= "Message:\n" . $message . "\n\n";
-      
+      $header  = "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+      $header  = "From: $from";
 
-      $success = mail($to, $subject, $body);
+      
+      $success = mail($to, $subject, $body, $header);
 
       if ( $success ) {
           $response[ 'success' ] = true;

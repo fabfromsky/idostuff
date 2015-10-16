@@ -9,12 +9,10 @@
     font-size: 24px; }
   .projects .col-md-4 .project-infos.col-md-12 .project-summary {
     margin-top: 20px; }
+  .projects .col-md-4 .project-infos.col-md-12 .btn.go-project {
+    margin-top: 20px; }
   .projects .col-md-4 .project-infos.col-md-12 .btn.go-project a {
-    margin-top: 20px;
-    font-size: 12px;
-    width: 240px;
-    margin-left: auto;
-    margin-right: auto; }
+    font-size: 12px; }
 
 .projects .col-md-8 {
   padding: 0; }
@@ -62,8 +60,7 @@
       .projects .content .bloc .project-infos.col-md-12 {
         margin-top: 80px; }
       .projects .content .bloc .project-infos .btn.go-project a {
-        font-size: 14px;
-        width: 220px; }
+        font-size: 14px; }
       .projects .content .bloc .projects-pagination {
         text-align: right; } }
 

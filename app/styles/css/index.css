@@ -57,7 +57,10 @@ a {
 .btn {
   display: block;
   cursor: default;
-  padding: 20px; }
+  padding: 0;
+  width: 240px !important;
+  margin-right: auto;
+  margin-left: auto; }
 
 .btn a,
 .btn input[type="submit"],
